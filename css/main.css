@@ -7,8 +7,13 @@
     font-family: 'Avenir Next Bold';
     src: url('../assets/fonts/ave_next_ssv/AvenirNextLTPro-Bold.otf')
 }
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../assets/fonts/ave_next_ssv/AvenirNextLTPro-Regular.otf')
+}
 body {
     min-height: 100vh;
+    font-family: 'Avenir Next', sans-serif;
 }
 .hero {
     position: absolute;
@@ -22,6 +27,14 @@ body {
     font-weight: bold;
     font-size: 4em;
     font-family: 'Avenir Next Bold', sans-serif;
+
 }
 
+.logo {
+    padding: 1.5em 1em 1em 2em;
+    font-size: 16pt;
+}
 
+.logo img {
+    margin-right: 0.5em;
+}
