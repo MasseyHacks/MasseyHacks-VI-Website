@@ -1,11 +1,11 @@
 @font-face {
     font-family: ADAMCG;
-    src: url('assets/fonts/ADAMCGPRO.otf');
+    src: url('../assets/fonts/ADAMCGPRO.otf');
 }
 
 @font-face {
     font-family: 'Avenir Next Bold';
-    src: url('assets/fonts/AvenirNextLTPro-Bold.otf')
+    src: url('../assets/fonts/ave_next_ssv/AvenirNextLTPro-Bold.otf')
 }
 body {
     min-height: 100vh;
@@ -14,12 +14,14 @@ body {
     position: absolute;
     top: 30%;
     left: 10%;
-    letter-spacing: -0.1em;
-    line-height: 5em;
+    /*letter-spacing: -0.1em;*/
+    /*line-height: 5em;*/
 }
 
 .hero h1{
     font-weight: bold;
-    font-size: 26pt;
+    font-size: 4em;
     font-family: 'Avenir Next Bold', sans-serif;
 }
+
+
