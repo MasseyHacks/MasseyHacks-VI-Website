@@ -1,0 +1,15 @@
+@font-face {
+    font-family: ADAMCG;
+    src: url('assets/fonts/ADAMCGPRO.otf');
+}
+body {
+    min-height: 100vh;
+}
+.hero {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-family: 'ADAMCG', sans-serif;
+    letter-spacing: -0.1em;
+    line-height: 5em;
+}
