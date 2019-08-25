@@ -1,15 +1,28 @@
 @font-face {
-    font-family: ADAMCG;
+    font-family: "ADAMCG";
     src: url('assets/fonts/ADAMCGPRO.otf');
 }
-body {
+
+.hero-background {
     min-height: 100vh;
+    background: rgb(144, 144, 145);
+    background: linear-gradient(180deg, rgba(144, 144, 145, 1) 0%, rgba(235, 153, 117, 1) 100%);
 }
 .hero {
+
     position: absolute;
-    top: 30%;
+    top: 55%;
     left: 10%;
-    font-family: 'ADAMCG', sans-serif;
-    letter-spacing: -0.1em;
-    line-height: 5em;
+    color: white;
+    /*    font-family: 'Avenir Next', sans-serif;
+    */
+}
+
+.hero h1 {
+    font-weight: 400;
+    font-size: 5em;
+}
+
+h2 {
+    font-weight: 300;
 }
