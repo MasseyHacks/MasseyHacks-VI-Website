@@ -1,6 +1,25 @@
 @font-face {
-    font-family: "ADAMCG";
-    src: url('assets/fonts/ADAMCGPRO.otf');
+    font-family: 'Avenir Next';
+    src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Avenir Next Bold';
+    src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Bold.otf");
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir Next Bold', sans-serif;
+    font-weight: bold;
 }
 
 .hero-background {
@@ -14,8 +33,6 @@
     top: 55%;
     left: 10%;
     color: white;
-    /*    font-family: 'Avenir Next', sans-serif;
-    */
 }
 
 .hero h1 {
@@ -25,4 +42,17 @@
 
 h2 {
     font-weight: 300;
+}
+
+
+/* Info sections */
+.feature-text {
+}
+
+.emphasis-title {
+    text-align: center;
+}
+
+.row-tb-margin {
+    margin-bottom: 50px;
 }
