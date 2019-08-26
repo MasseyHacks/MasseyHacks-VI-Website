@@ -8,8 +8,18 @@
     src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Bold.otf");
 }
 
+@font-face {
+    font-family: 'San Francisco';
+    src: url("../assets/fonts/SFPro/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+    font-family: 'San Francisco Bold';
+    src: url("../assets/fonts/SFPro/SF-Pro-Display-Bold.otf");
+}
+
 body {
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'San Francisco', sans-serif;
 }
 
 p {
@@ -18,7 +28,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Avenir Next Bold', sans-serif;
+    font-family: 'San Francisco Bold', sans-serif;
     font-weight: bold;
 }
 
@@ -27,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgb(144, 144, 145);
     background: linear-gradient(180deg, rgba(144, 144, 145, 1) 0%, rgba(235, 153, 117, 1) 100%);
 }
+
 .hero {
 
     position: absolute;
@@ -54,5 +65,11 @@ h2 {
 }
 
 .row-tb-margin {
-    margin-bottom: 50px;
+    margin-bottom: 20vh;
+}
+
+@media (max-width: 800px) {
+    .feature-stats {
+        text-align: center;
+    }
 }
