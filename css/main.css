@@ -18,13 +18,17 @@
     src: url("../assets/fonts/SFPro/SF-Pro-Display-Bold.otf");
 }
 
+html {
+    font-size: calc(0.85em + 1vw);
+}
+
 body {
     font-family: 'San Francisco', sans-serif;
 }
 
 p {
-    line-height: 1.6em;
-    font-size: 1.2em;
+    /*line-height: 1.6em;*/
+    font-size: 0.6em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero h1 {
     font-weight: 400;
-    font-size: 4em;
+    /*font-size: 4em;*/
 }
 
 h2 {
@@ -58,6 +62,7 @@ h2 {
 
 /* Info sections */
 .feature-text {
+
 }
 
 .emphasis-title {
