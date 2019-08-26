@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-background {
     min-height: 100vh;
     background: rgb(144, 144, 145);
-    background: linear-gradient(180deg, rgba(144, 144, 145, 1) 0%, rgba(235, 153, 117, 1) 100%);
+    background: linear-gradient(180deg, rgba(144, 144, 145, 1) 40%, rgba(235, 153, 117, 1) 100%);
 }
 
 .hero {
