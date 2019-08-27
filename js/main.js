@@ -1,21 +1,35 @@
-let countUpI;
-
 function countUp() {
-    let prizeE = $("#countup-prizes");
-    let attendE = $("#countup-attend");
+    $('.js-counter').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count'),
+            countDur = $this.attr('data-duration');
 
-    let prizeNum = parseInt(prizeE.text());
-    let attendNum = parseInt(attendE.text());
+        $({ countNum: $this.text()}).animate({
+                countNum: countTo
+            },
+            {
+                duration: countDur,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
 
-    prizeE.text(prizeNum + 17 > 3300 ? 3300 : prizeNum+17);
-    attendE.text(attendNum + 7 > 800 ? 800 : attendNum+7);
+            });
 
-    console.log(prizeNum);
-    if(prizeNum === 3300){
-        clearInterval(countUpI);
-    }
+
+
+    });
 }
 
 $(function () {
-    countUpI = setInterval(countUp, 1);
+    var waypoint = new Waypoint({
+        element: document.getElementById('pitch-container'),
+        handler: function() {
+            countUp();
+        },
+        offset: '50%'
+    });
 });

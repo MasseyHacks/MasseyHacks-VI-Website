@@ -10,6 +10,7 @@
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"/>
     <script src="js/bootstrap.bundle.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 
@@ -20,7 +21,7 @@
             <h4>March 28th - 29th, 2020</h4>
         </div>
     </div>
-    <div class="container" style="margin-top: 20vh;">
+    <div class="container" style="margin-top: 20vh;" id="pitch-container">
         <div class="row row-tb-margin align-items-center justify-content-center">
             <div class="col-md-6">
                 <div class="feature-text">
@@ -36,11 +37,11 @@
             <div class="col-md-4" style="text-align: right;">
                 <div class="row feature-stats">
                     <div class="col-6 col-md-12">
-                        <h2 style="font-weight: bold;">$<span id="countup-prizes">0</span></h2>
+                        <h2 style="font-weight: bold;">$<span class="js-counter" data-count="3300" data-duration="1500">0</span></h2>
                         <p>in prizes</p>
                     </div>
                     <div class="col-6 col-md-12">
-                        <h2 style="font-weight: bold;"><span id="countup-attend">0</span>+</h2>
+                        <h2 style="font-weight: bold;"><span class="js-counter" data-count="800" data-duration="1000">0</span>+</h2>
                         <p>students have attended</p>
                     </div>
                 </div>
