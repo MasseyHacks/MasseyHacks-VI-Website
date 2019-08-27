@@ -243,11 +243,35 @@ h2 {
         top: 90vh;
         left: 8vw;
         transform: rotate(-45deg);
+        /*background: linear-gradient(to right, #f46b45, #eea849); !* Chrome 10-25, Safari 5.1-6 *!*/
     }
 
     #shape7 {
         top: 130vh;
         left: 2vw;
+        transform: rotate(-45deg);
+        background: linear-gradient(to right, #f46b45, #eea849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    #shape8 {
+        top: 150vh;
+        left: calc(98vw - 100px);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background: linear-gradient(to right, #00c6ff, #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    #shape9 {
+        top: 180vh;
+        left: 8vw;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
 
