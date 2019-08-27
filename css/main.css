@@ -69,8 +69,8 @@ h2 {
 
 
 /* Info sections */
-.feature-text {
-
+#info-section > div:nth-of-type(even) h2 {
+    text-align: right;
 }
 
 .emphasis-title {
@@ -87,6 +87,18 @@ h2 {
     }
     p {
         font-size: inherit;
+    }
+
+    /*Automatically push right-aligned columns on mobile*/
+    #info-section > div:nth-of-type(even) > div:nth-of-type(2) {
+        order: -1 !important;
+    }
+    #info-section > div:nth-child(n) h2 {
+        text-align: center;
+    }
+
+    .row-tb-margin {
+        margin-bottom: 5vh;
     }
 }
 
