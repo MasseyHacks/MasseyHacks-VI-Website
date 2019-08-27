@@ -11,11 +11,13 @@
 @font-face {
     font-family: 'San Francisco';
     src: url("../assets/fonts/SFPro/SF-Pro-Display-Regular.otf");
+    font-display: auto;
 }
 
 @font-face {
     font-family: 'San Francisco Bold';
     src: url("../assets/fonts/SFPro/SF-Pro-Display-Bold.otf");
+    font-display: auto;
 }
 
 html {
