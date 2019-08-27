@@ -280,3 +280,50 @@ h2 {
     }
 }
 
+
+
+footer {
+    /*background-color: #fffdfb;*/
+    background-color: #e1edff;
+    z-index: -3;
+    position: relative;
+}
+
+.footer-wrapper {
+    text-align: left;
+    padding: 1em 0;
+}
+
+.footer-desktop {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .footer-desktop {
+        display: flex;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-desktop {
+        display: flex;
+        height: 55vh;
+    }
+}
+
+.footer-links {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.footer-links a{
+    margin: 0 0.2em;
+    font-size: 0.5em;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: 0.4em;
+}

@@ -9,20 +9,21 @@
 <!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="css/main.css" rel="stylesheet"/>
     <script src="js/bootstrap.bundle.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet"/>
 </head>
 
-<body>
+<body id="top">
     <div class="hero-background">
         <div class="hero">
             <h1>MasseyHacks <span>VI</span></h1>
             <h4>March 28th - 29th, 2020</h4>
         </div>
     </div>
-    <div class="container" style="margin-top: 20vh;" id="pitch-container">
+    <div class="container" style="margin-top: 20vh;" id="about">
         <div class="row row-tb-margin align-items-center justify-content-center" data-aos="fade-in">
             <div class="col-md-6">
                 <div class="feature-text">
@@ -83,6 +84,7 @@
         </div>
     </div>
     <div id="faq-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-aos="fade-in">
+        <span id="faq"></span>
         <ol class="carousel-indicators">
             <li data-target="#faq-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#faq-carousel" data-slide-to="1"></li>
@@ -108,7 +110,7 @@
                             <h2>What do I need to bring?</h2>
                         </div>
                         <div class="col-lg-4">
-                            <p class="faq-answer">Paperwork such as your waiver and ID are necessary for entry. Bring your own laptop and charger; power strips, sleeping bags and toiletries are recommended. As for other necessities like food, freedom and fun, rest assured that we’ve got you covered.</p>
+                            <p class="faq-answer">Paperwork such as your waiver and ID are necessary for entry. Bring your own laptop and charger; power strips are also recommended. As for other necessities like food, freedom and fun, rest assured that we’ve got you covered.</p>
                         </div>
                     </div>
                 </div>
@@ -152,9 +154,29 @@
         <div class="hexagon rellax" data-rellax-speed="-1.1" id="shape8" style="transform: rotate(-45deg);"></div>
         <div class="hexagon rellax" data-rellax-speed="-1.1" id="shape9" style="transform: rotate(-45deg);"></div>
     </div>
+    <footer  data-aos="fade-in">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center footer-desktop">
+                <div class="col-md-5 footer-wrapper">
+                    <h3 class="footer-title">MasseyHacks VI</h3>
+                    <p class="footer-copyright">Copyright &copy; 2020 MasseyHacks<br>&lt;/&gt; by the MasseyHacks Platform Team with <i class="fas fa-coffee"></i></p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-links">
+                        <li><a data-scroll href="#top" class="expand-link">Home</a></li>
+                        <li><a href="#about" class="expand-link">About</a></li>
+                        <li><a href="" class="expand-link">Past Projects</a></li>
+                        <li><a href="#faq" class="expand-link">FAQ</a></li>
+                        <li><a href="" class="expand-link">Sponsorship</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

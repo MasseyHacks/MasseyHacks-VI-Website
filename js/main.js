@@ -27,8 +27,11 @@ function countUp() {
 $(function () {
     var rellax = new Rellax('.rellax')
     AOS.init();
+    var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 200
+    });
     var waypoint = new Waypoint({
-        element: document.getElementById('pitch-container'),
+        element: document.getElementById('about'),
         handler: function() {
             countUp();
         },
