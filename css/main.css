@@ -82,6 +82,10 @@ h2 {
     margin-bottom: 20vh;
 }
 
+.row-tb-margin:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .feature-stats {
         text-align: center;
