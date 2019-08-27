@@ -73,7 +73,7 @@ h2 {
     margin-bottom: 20vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .feature-stats {
         text-align: center;
     }
