@@ -82,8 +82,11 @@ h2 {
     margin-bottom: 20vh;
 }
 
-#info-section > div:last-of-type {
-    margin-bottom: 0;
+@media (min-height: 1080px) {
+    #info-section > div:last-of-type {
+        margin-bottom: 100px;
+    }
+
 }
 
 @media (max-width: 768px) {
