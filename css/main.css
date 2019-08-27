@@ -285,7 +285,6 @@ h2 {
 footer {
     /*background-color: #fffdfb;*/
     background-color: #e1edff;
-    z-index: -3;
     position: relative;
 }
 
