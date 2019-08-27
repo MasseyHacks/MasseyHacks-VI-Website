@@ -82,7 +82,7 @@ h2 {
     margin-bottom: 20vh;
 }
 
-.row-tb-margin:last-child {
+#info-section > div:last-of-type {
     margin-bottom: 0;
 }
 
