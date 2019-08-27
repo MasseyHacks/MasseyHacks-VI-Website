@@ -31,6 +31,6 @@ $(function () {
         handler: function() {
             countUp();
         },
-        offset: '50%'
+        offset: '60%'
     });
 });
