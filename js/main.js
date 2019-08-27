@@ -2,7 +2,7 @@ function countUp() {
     $('.js-counter').each(function() {
         var $this = $(this),
             countTo = $this.attr('data-count'),
-            countDur = $this.attr('data-duration');
+            countDur = parseInt($this.attr('data-duration'));
 
         $({ countNum: $this.text()}).animate({
                 countNum: countTo
@@ -25,6 +25,7 @@ function countUp() {
 }
 
 $(function () {
+    AOS.init();
     var waypoint = new Waypoint({
         element: document.getElementById('pitch-container'),
         handler: function() {
