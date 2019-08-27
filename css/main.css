@@ -313,6 +313,14 @@ footer {
         display: flex;
         height: 40vh;
     }
+    .footer-mobile {
+        display: none;
+    }
+
+    .footer-copyright {
+        margin: 0;
+        font-size: 0.4em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -320,6 +328,16 @@ footer {
         display: flex;
         height: 55vh;
     }
+}
+
+.footer-mobile {
+    height:30vh;
+    min-height: 250px;
+    text-align: center;
+}
+
+.footer-mobile a{
+    margin: 0.4em 0.5em;
 }
 
 .footer-links {
@@ -334,5 +352,5 @@ footer {
 
 .footer-copyright {
     margin: 0;
-    font-size: 0.4em;
+    font-size: 0.6em;
 }
