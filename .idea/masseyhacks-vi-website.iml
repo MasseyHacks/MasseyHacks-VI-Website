@@ -7,5 +7,8 @@
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
     <orderEntry type="library" name="noframework.waypoints" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1" level="application" />
+    <orderEntry type="library" name="noframework.waypoints" level="application" />
+    <orderEntry type="library" name="rellax" level="application" />
   </component>
 </module>
