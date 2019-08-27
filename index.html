@@ -7,8 +7,8 @@
     <title>MasseyHacks VI</title>
 <!--    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"-->
 <!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-    <link href="css/main.css" rel="stylesheet"/>
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"/>
     <script src="js/bootstrap.bundle.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
@@ -80,16 +80,58 @@
             </div>
         </div>
     </div>
-    <div class="faq-container">
-        <div class="faq-title">
-            <h1>FAQ</h1>
+    <div id="faq-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#faq-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#faq-carousel" data-slide-to="1"></li>
+            <li data-target="#faq-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="faq-container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <h2>How much does MasseyHacks cost?</h2>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="faq-answer">Admission to MasseyHacks VI is $25 per person. If you require a subsidy, please contact us at <a class="expand-link" href="mailto:hello@masseyhacks?subject=ATTN Financial: Subsidy request for <name>">hello@masseyhacks.ca</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="faq-container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <h2>What do I need to bring?</h2>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="faq-answer">Paperwork such as your waiver and ID are necessary for entry. Bring your own laptop and charger; power strips, sleeping bags and toiletries are recommended. As for other necessities like food, freedom and fun, rest assured that we’ve got you covered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="faq-container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <h2>Do I have to stay for the entire event?</h2>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="faq-answer">We suggest that you stay for the entire event, but if you can't stay the night, you can leave during the night and come back. If are under 18, you can get a parent to pick you up <strong>before midnight</strong> and drop you back at the event after 5 am. If you are 18, you do not need a parent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="faq-question" id="faq-question">
-            What is the cost of admission?
-        </div>
-        <div class="faq-answer" id="faq-answer">
-            $20
-        </div>
+        <a class="carousel-control-prev" href="#faq-carousel" role="button" data-slide="prev">
+            <span class="carousel-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#faq-carousel" role="button" data-slide="next">
+            <span class="carousel-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
