@@ -191,7 +191,7 @@ h2 {
         z-index: -2;
     }
 
-    .hexagon {
+    .square-rotated {
         width: 100px;
         height: 100px;
         background: #212529;
@@ -275,7 +275,7 @@ h2 {
         transform: rotate(-45deg);
     }
 
-    #shapes > div.hexagon {
+    #shapes > div.square-rotated {
         transform: rotate(-45deg);
     }
 }
