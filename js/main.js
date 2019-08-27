@@ -25,6 +25,7 @@ function countUp() {
 }
 
 $(function () {
+    var rellax = new Rellax('.rellax')
     AOS.init();
     var waypoint = new Waypoint({
         element: document.getElementById('pitch-container'),

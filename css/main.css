@@ -48,6 +48,7 @@ a:hover {
     min-height: 100vh;
     background: rgb(144, 144, 145);
     background: linear-gradient(180deg, rgba(144, 144, 145, 1) 40%, rgba(235, 153, 117, 1) 100%);
+    z-index: 500;
 }
 
 .hero {
@@ -172,3 +173,86 @@ h2 {
     height: 45%;
     transition: height 380ms cubic-bezier(0.32, 1.04, 0.46, 1.08);
 }
+
+/* Shapes */
+
+@media (min-width: 1365px) {
+    #shapes {
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #grid {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        z-index: -2;
+    }
+
+    .hexagon {
+        width: 100px;
+        height: 100px;
+        background: #212529;
+        position: absolute;
+        z-index: -1;
+        -webkit-border-radius: 20%;
+        -moz-border-radius: 20%;
+        border-radius: 20%;
+    }
+
+    #shape1 {
+        top: 5vh;
+        left: 8vw;
+        transform: rotate(-45deg);
+        background: linear-gradient(to right, #f2994a, #f2c94c); /* Chrome 10-25, Safari 5.1-6 */
+    }
+
+    #shape2 {
+        top: 55vh;
+        left: calc(2vw + 25px);
+        transform: rotate(-45deg);
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to right, #00c6ff, #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    #shape3 {
+        top: 60vh;
+        left: calc(98vw - 100px);
+        transform: rotate(-45deg);
+        background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    #shape4 {
+        top: 20vh;
+        left: calc(92vw - 100px);
+        transform: rotate(-45deg);
+    }
+
+    #shape5 {
+        top: 100vh;
+        left: calc(92vw - 100px);
+        transform: rotate(-45deg);
+    }
+
+    #shape6 {
+        top: 90vh;
+        left: 8vw;
+        transform: rotate(-45deg);
+    }
+
+    #shape7 {
+        top: 130vh;
+        left: 2vw;
+        transform: rotate(-45deg);
+    }
+
+    #shapes > div.hexagon {
+        transform: rotate(-45deg);
+    }
+}
+

@@ -9,10 +9,10 @@
 <!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link href="css/main.css" rel="stylesheet"/>
     <script src="js/bootstrap.bundle.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -134,6 +134,21 @@
             <span class="carousel-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+    <div id="grid">
+        <div style="border-left: 1px solid #212529; height: 100vh; left: calc(2vw + 50px); position: absolute;"></div>
+        <div style="border-left: 1px solid #212529; height: 100vh; left: calc(8vw + 50px); position: absolute;"></div>
+        <div style="border-left: 1px solid #212529; height: 100vh; left: calc(calc(98vw - 100px) + 50px); position: absolute;"></div>
+        <div style="border-left: 1px solid #212529; height: 100vh; left: calc(calc(92vw - 100px) + 50px); position: absolute;"></div>
+    </div>
+    <div id="shapes">
+        <div class="hexagon rellax" data-rellax-speed="-1.2" id="shape1" style="transform: rotate(-45deg);"></div>
+        <div class="hexagon rellax" data-rellax-speed="-0.9" id="shape2" style="transform: rotate(-45deg);"></div>
+        <div class="hexagon rellax" data-rellax-speed="-1" id="shape3" style="transform: rotate(-45deg);"></div>
+        <div class="hexagon rellax" data-rellax-speed="-1.1" id="shape4" style="transform: rotate(-45deg);"></div>
+        <div class="hexagon rellax" data-rellax-speed="-1.1" id="shape5" style="transform: rotate(-45deg);"></div>
+        <div class="hexagon rellax" data-rellax-speed="-1.1" id="shape6" style="transform: rotate(-45deg);"></div>
+        <div class="hexagon rellax" data-rellax-speed="-1.1" id="shape7" style="transform: rotate(-45deg);"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
