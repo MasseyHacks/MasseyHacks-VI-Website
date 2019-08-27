@@ -82,6 +82,13 @@ h2 {
     margin-bottom: 20vh;
 }
 
+@media (min-height: 1080px) {
+    #info-section > div:last-of-type {
+        margin-bottom: 100px;
+    }
+
+}
+
 @media (max-width: 768px) {
     .feature-stats {
         text-align: center;
