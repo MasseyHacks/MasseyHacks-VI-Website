@@ -36,11 +36,11 @@
             <div class="col-md-4" style="text-align: right;">
                 <div class="row feature-stats">
                     <div class="col-6 col-md-12">
-                        <h2 style="font-weight: bold;">$3300</h2>
+                        <h2 style="font-weight: bold;">$<span id="countup-prizes">0</span></h2>
                         <p>in prizes</p>
                     </div>
                     <div class="col-6 col-md-12">
-                        <h2 style="font-weight: bold;">800+</h2>
+                        <h2 style="font-weight: bold;"><span id="countup-attend">0</span>+</h2>
                         <p>students have attended</p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-    <div id="faq-carousel" class="carousel slide" data-ride="carousel">
+    <div id="faq-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
         <ol class="carousel-indicators">
             <li data-target="#faq-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#faq-carousel" data-slide-to="1"></li>
@@ -90,10 +90,10 @@
             <div class="carousel-item active">
                 <div class="faq-container">
                     <div class="row justify-content-center">
-                        <div class="col-md-4">
+                        <div class="col-lg-4">
                             <h2>How much does MasseyHacks cost?</h2>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4">
                             <p class="faq-answer">Admission to MasseyHacks VI is $25 per person. If you require a subsidy, please contact us at <a class="expand-link" href="mailto:hello@masseyhacks?subject=ATTN Financial: Subsidy request for <name>">hello@masseyhacks.ca</a></p>
                         </div>
                     </div>
@@ -102,10 +102,10 @@
             <div class="carousel-item">
                 <div class="faq-container">
                     <div class="row justify-content-center">
-                        <div class="col-md-4">
+                        <div class="col-lg-4">
                             <h2>What do I need to bring?</h2>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4">
                             <p class="faq-answer">Paperwork such as your waiver and ID are necessary for entry. Bring your own laptop and charger; power strips, sleeping bags and toiletries are recommended. As for other necessities like food, freedom and fun, rest assured that we’ve got you covered.</p>
                         </div>
                     </div>
@@ -114,26 +114,27 @@
             <div class="carousel-item">
                 <div class="faq-container">
                     <div class="row justify-content-center">
-                        <div class="col-md-4">
+                        <div class="col-lg-4">
                             <h2>Do I have to stay for the entire event?</h2>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4">
                             <p class="faq-answer">We suggest that you stay for the entire event, but if you can't stay the night, you can leave during the night and come back. If are under 18, you can get a parent to pick you up <strong>before midnight</strong> and drop you back at the event after 5 am. If you are 18, you do not need a parent.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#faq-carousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#faq-carousel" role="button" data-slide="prev" style="display:none">
             <span class="carousel-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#faq-carousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#faq-carousel" role="button" data-slide="next" style="display:none">
             <span class="carousel-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script src="js/main.js"></script>
 </body>
 

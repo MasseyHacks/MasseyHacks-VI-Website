@@ -124,8 +124,20 @@ h2 {
 .faq-container {
     display: flex;
     align-items: center;
-    height: 15em;
+    height: 26em;
     padding: 3em 2em;
+}
+
+@media (min-width: 576px) {
+    .faq-container {
+        height: 20em;
+    }
+}
+
+@media (min-width: 992px) {
+    .faq-container {
+        height: 15em;
+    }
 }
 
 .faq-answer {
