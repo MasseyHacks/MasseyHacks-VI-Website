@@ -83,6 +83,7 @@ a:hover {
     .feature-stats {
         text-align: center;
     }
+
     p {
         font-size: inherit;
     }
@@ -91,6 +92,7 @@ a:hover {
     #info-section > div:nth-of-type(even) > div:nth-of-type(2) {
         order: -1 !important;
     }
+
     #info-section > div:nth-child(n) h2 {
         text-align: center;
     }
@@ -107,12 +109,15 @@ a:hover {
     height: 20px;
     background: no-repeat 50% / 100% 100%;
 }
+
 .carousel-next-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
+
 .carousel-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e")
 }
+
 .carousel-indicators li {
     background-color: #212529;
 }
@@ -285,7 +290,6 @@ a:hover {
 }
 
 
-
 footer {
     /*background-color: #fffdfb;*/
     background-color: #e1edff;
@@ -306,12 +310,12 @@ footer {
 }
 
 .footer-mobile {
-    height:30vh;
+    height: 30vh;
     min-height: 250px;
     text-align: center;
 }
 
-.footer-mobile a{
+.footer-mobile a {
     margin: 0.4em 0.5em;
 }
 
@@ -320,7 +324,7 @@ footer {
     margin-bottom: 0;
 }
 
-.footer-links a{
+.footer-links a {
     margin: 0 0.2em;
     font-size: 0.5em;
 }
@@ -330,6 +334,7 @@ footer {
         display: flex;
         height: 40vh;
     }
+
     .footer-mobile {
         display: none;
     }
