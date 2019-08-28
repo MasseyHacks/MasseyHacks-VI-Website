@@ -30,19 +30,19 @@
 /*    src: url("../assets/cooper/CooperHewitt-Book.woff")*/
 /*}*/
 
-@font-face {
-    font-family: 'IBM Plex Bold';
-    src: url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Bold.woff2") format('woff2'),
-    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Bold.woff") format('woff'),
-    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-Bold.otf") format('otf');
-}
+/*@font-face {*/
+/*    font-family: 'IBM Plex Bold';*/
+/*    src: url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Bold.woff2") format('woff2'),*/
+/*    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Bold.woff") format('woff'),*/
+/*    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-Bold.otf") format('otf');*/
+/*}*/
 
-@font-face {
-    font-family: 'IBM Plex';
-    src: url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Regular.woff2") format('woff2'),
-    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff") format('woff'),
-    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-Regular.otf") format('otf');
-}
+/*@font-face {*/
+/*    font-family: 'IBM Plex';*/
+/*    src: url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Regular.woff2") format('woff2'),*/
+/*    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff") format('woff'),*/
+/*    url("../assets/fonts/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-Regular.otf") format('otf');*/
+/*}*/
 
 html {
     font-size: calc(0.85em + 1vw);
@@ -50,7 +50,7 @@ html {
 
 body {
     /*font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', sans-serif;*/
-    font-family: 'IBM Plex', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 p {
@@ -60,7 +60,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     /*font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', sans-serif;*/
-    font-family: 'IBM Plex Bold', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
 }
 
