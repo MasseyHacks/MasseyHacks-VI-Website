@@ -1,31 +1,31 @@
-@font-face {
-    font-family: 'Avenir Next';
-    src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Regular.otf");
-}
+/*@font-face {*/
+/*    font-family: 'Avenir Next';*/
+/*    src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Regular.otf");*/
+/*}*/
 
-@font-face {
-    font-family: 'Avenir Next Bold';
-    src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Bold.otf");
-}
+/*@font-face {*/
+/*    font-family: 'Avenir Next Bold';*/
+/*    src: url("../assets/fonts/ave_next_ssv/AvenirNextLTPro-Bold.otf");*/
+/*}*/
 
-@font-face {
-    font-family: 'San Francisco';
-    src: url("../assets/fonts/SFPro/SF-Pro-Display-Regular.otf");
-    font-display: auto;
-}
+/*@font-face {*/
+/*    font-family: 'San Francisco';*/
+/*    src: url("../assets/fonts/SFPro/SF-Pro-Display-Regular.otf");*/
+/*    font-display: auto;*/
+/*}*/
 
-@font-face {
-    font-family: 'San Francisco Bold';
-    src: url("../assets/fonts/SFPro/SF-Pro-Display-Bold.otf");
-    font-display: auto;
-}
+/*@font-face {*/
+/*    font-family: 'San Francisco Bold';*/
+/*    src: url("../assets/fonts/SFPro/SF-Pro-Display-Bold.otf");*/
+/*    font-display: auto;*/
+/*}*/
 
 html {
     font-size: calc(0.85em + 1vw);
 }
 
 body {
-    font-family: 'San Francisco', sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', sans-serif;
 }
 
 p {
@@ -34,8 +34,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'San Francisco Bold', sans-serif;
-    font-weight: bold;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', sans-serif;
+    font-weight: 700 !important;
 }
 
 a {
