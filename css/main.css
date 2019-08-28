@@ -35,7 +35,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', sans-serif;
-    font-weight: 700 !important;
+    font-weight: bold;
 }
 
 a {
@@ -58,16 +58,6 @@ a:hover {
     left: 10%;
     color: #212529;
 }
-
-.hero h1 {
-    font-weight: 400;
-    /*font-size: 4em;*/
-}
-
-h2 {
-    font-weight: 300;
-}
-
 
 /* Info sections */
 #info-section > div:nth-of-type(even) h2 {
