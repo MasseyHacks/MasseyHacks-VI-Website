@@ -516,7 +516,6 @@ nav:hover {
         top: 20vh;
         left: calc(92vw - 100px);
         transform: rotate(-45deg);
-        background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
     }
 
     #shape5 {
@@ -595,6 +594,7 @@ nav:hover {
         /*border-radius: 5000px;*/
         width: 80px;
         height: 80px;
+        background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
     }
 
     /*#shape15 {*/
