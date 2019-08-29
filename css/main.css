@@ -562,6 +562,35 @@ nav:hover {
         transform: rotate(-45deg);
     }
 
+    #shape10 {
+        top: 190vh;
+        left: calc(98vw - 100px);
+    }
+
+    #shape11 {
+        top: 320vh;
+        left: 8vw;
+    }
+
+    #shape12 {
+        top: 250vh;
+        left: 2vw;
+    }
+
+    #shape13 {
+        top: 300vh;
+        left: calc(92vw - 100px);
+    }
+
+    #shape14 {
+        top: 240vh;
+        left: calc(98vw - 100px);
+        /*border-radius: 5000px;*/
+        width: auto;
+        height: auto;
+        background: transparent;
+    }
+
     #shapes > div.square-rotated {
         transform: rotate(-45deg);
     }
