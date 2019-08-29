@@ -202,6 +202,73 @@ a:hover {
     transition: height 380ms cubic-bezier(0.32, 1.04, 0.46, 1.08);
 }
 
+/* Featured Projects */
+
+.project {
+    /*height: 50vh;*/
+    /*padding: 30px;*/
+    margin: 5px;
+    /*-webkit-box-shadow: 9px 9px 20px -7px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: 9px 9px 20px -7px rgba(0,0,0,0.5);*/
+    /*box-shadow: 9px 9px 20px -7px rgba(0,0,0,0.5);*/
+    /*max-width: 300px;*/
+}
+
+.project h4 {
+    font-size: 0.9em;
+}
+
+.project-image {
+    transition: all 0.2s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.project-image:hover {
+    transform: scale(1.01);
+}
+
+/*.row:nth-of-type(1) > .project:nth-of-type(2):hover {*/
+/*    transform: scale(1.1) translate(10%, -10%);*/
+/*}*/
+
+/*.row:nth-of-type(2) > .project:nth-of-type(2):hover {*/
+/*    transform: scale(1.1) translate(10%, 10%);*/
+/*}*/
+
+/*.row:nth-of-type(2) > .project:nth-of-type(1):hover {*/
+/*    transform: scale(1.1) translate(-10%, 10%);*/
+/*}*/
+
+#project1 div.project-bg {
+    /*background: #ff8040;*/
+    padding: 5px;
+}
+
+#project1 div.project-image {
+    height: 10em;
+    background-image: url("../assets/images/hydrolife.jpg");
+}
+
+#project2 div.project-image {
+    height: 15em;
+    background-image: url("../assets/images/hydrolife.jpg");
+}
+
+#project3 div.project-image {
+    height: 12em;
+    background-image: url("../assets/images/hydrolife.jpg");
+}
+
+
+#project4 div.project-image {
+    height: 11em;
+    background-image: url("../assets/images/hydrolife.jpg");
+}
+
+
 /* Shapes */
 
 #shapes {
