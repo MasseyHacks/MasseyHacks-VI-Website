@@ -400,8 +400,18 @@ nav:hover {
 }
 
 .project h4 {
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
+@media(min-width: 768px) {
+    #second-row-projects {
+        margin-top: 100px;
+    }
+
+    .project h4 {
+        font-size: 0.9em;
+    }
+}
+
 
 .project-image {
     transition: all 0.2s;
