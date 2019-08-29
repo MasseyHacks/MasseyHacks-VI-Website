@@ -24,6 +24,7 @@ function countUp() {
     });
 }
 var navState = false;
+var modalDataset = ["https://devpost.com/software/hydrolife","https://devpost.com/software/lag-sq2cmo","https://devpost.com/software/strest","https://devpost.com/software/wave-t6zv4k"];
 
 $(function () {
     var rellax = new Rellax('.rellax');
@@ -54,6 +55,13 @@ $(function () {
             $mainNavLinks.fadeOut(50);
         }
         navState = !navState;
+    });
+
+    $(".project").each(function () {
+       $(this).click(function (){
+           var url = modalDataset[parseInt($(this).data("dataset-index"))];
+           window.open(url,'_blank');
+       })
     });
 
     $(document).mouseup(e => {
