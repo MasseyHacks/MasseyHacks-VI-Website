@@ -30,15 +30,15 @@ $(function () {
     var rellax = new Rellax('.rellax');
     AOS.init();
     var scroll = new SmoothScroll('a[href*="#"]',{
-        speed: 200
+        speed: 200,
+        updateURL: false
     });
     var waypoint = new Waypoint({
         element: document.getElementById('about'),
         handler: function() {
             countUp();
         },
-        offset: '60%',
-        updateURL: false
+        offset: '60%'
     });
 
     var $mainNav = $("#main-nav");
