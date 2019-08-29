@@ -18,6 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://masseyhacks.ca/">
+
     <title>MasseyHacks VI</title>
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -29,12 +30,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </head>
 
 <body id="top">
-<div class="hero-background">
-    <div class="hero">
-        <h1>MasseyHacks <span>VI</span></h1>
-        <h4>March 28th - 29th, 2020</h4>
+    <nav id="main-nav" class="nav-closed">
+        <div class="nav-icon-container">
+            <div class="nav-icon"></div>
+        </div>
+        <div class="nav-links-wrapper" id="main-nav-links" style="display:none">
+            <div>
+                <ul class="nav-links">
+                    <li><a data-scroll href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="">Past Projects</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#sponsors">Sponsorship</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="hero-background">
+        <div class="hero">
+            <h1>MasseyHacks <span>VI</span></h1>
+            <h4>March 28th - 29th, 2020</h4>
+        </div>
     </div>
-</div>
 
 <!-- About -->
 <div class="container" id="about" style="margin-top: 20vh;">
@@ -67,7 +85,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             </div>
         </div>
     </div>
-    
+
     <!-- Statements -->
     <div id="info-section">
         <div class="row row-tb-margin align-items-center justify-content-center" data-aos="fade-in">
@@ -160,7 +178,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             </div>
         </div>
     </div> <!-- END QUESTIONS -->
-    
+
     <!-- Carousel controls - hidden -->
     <a class="carousel-control-prev" data-slide="prev" href="#faq-carousel" role="button" style="display:none">
         <span aria-hidden="true" class="carousel-prev-icon"></span>
@@ -223,8 +241,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </div>
 
 <!-- Sponsors -->
-
-<div class="container-fluid sponsors" id="sponsors">
+<div class="container-fluid sponsors" id="sponsors" data-aos="fade-in">
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <h2>Sponsors</h2>

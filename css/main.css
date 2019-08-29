@@ -72,6 +72,150 @@ a:hover {
     text-decoration: none;
 }
 
+#main-nav {
+    position: fixed;
+    right: calc(1% + 0.7em);
+    top: calc(1% + 0.7em);
+    background-color: #212529;
+    z-index: 500;
+    color: white;
+    transition: background-color 150ms ease, color 150ms ease, height 150ms ease, width 150ms ease, border-radius 150ms ease;
+}
+
+.nav-closed {
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+}
+
+.nav-open {
+    border-radius: 10px;
+    height: 35vh;
+    width: 50vw;
+}
+
+.nav-links-wrapper {
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 35vh;
+    transition: display 150ms ease;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.nav-icon-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    height: 15vw;
+    width: 15vw;
+    line-height: 1;
+}
+
+.nav-icon {
+    background-image: url("../assets/images/menu.svg");
+    background-size: contain;
+    height: 7vw;
+    width: 7vw;
+}
+
+.nav-links {
+    font-size: 1.3em;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 1em;
+}
+
+.nav-links a {
+    margin: 0;
+    line-height: 0.5em;
+    color: white;
+    transition: color 150ms ease;
+}
+
+.nav-links a:hover {
+    margin: 0;
+    line-height: 0.5em;
+    color: #95a1aa;
+}
+
+nav:hover {
+    background-color: black;
+    color: rgb(250, 250, 250);
+}
+
+@media (min-width: 992px) {
+    .nav-closed {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .nav-open {
+        border-radius: 20px;
+        height: 5em;
+        width: 7em;
+    }
+    .nav-icon {
+        background-image: url("../assets/images/menu.svg");
+        background-size: contain;
+        height: 0.8em;
+        width: 0.8em;
+    }
+    .nav-icon-container {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .nav-links-wrapper {
+        height: 5em;
+    }
+    .nav-links-wrapper {
+        margin-left: 0.25em;
+    }
+    .nav-links {
+        font-size: 0.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-closed {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .nav-open {
+        border-radius: 20px;
+        height: 5em;
+        width: 7em;
+    }
+    .nav-icon {
+        background-image: url("../assets/images/menu.svg");
+        background-size: contain;
+        height: 0.8em;
+        width: 0.8em;
+    }
+    .nav-icon-container {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .nav-links-wrapper {
+        height: 5em;
+    }
+    .nav-links-wrapper {
+        margin-left: 0.25em;
+    }
+    .nav-links {
+        font-size: 0.5em;
+    }
+}
+
 .hero-background {
     min-height: 100vh;
     background: rgb(247, 247, 247);

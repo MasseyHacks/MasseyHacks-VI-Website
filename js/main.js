@@ -25,7 +25,7 @@ function countUp() {
 }
 
 $(function () {
-    var rellax = new Rellax('.rellax')
+    var rellax = new Rellax('.rellax');
     AOS.init();
     var scroll = new SmoothScroll('a[href*="#"]',{
         speed: 200
@@ -37,4 +37,34 @@ $(function () {
         },
         offset: '60%'
     });
+
+    var navState = false;
+    var $mainNav = $("#main-nav");
+    var $mainNavLinks = $("#main-nav-links");
+
+    $mainNav.click(function () {
+        if(!navState){
+            $(this).removeClass("nav-closed");
+            $(this).addClass("nav-open");
+            $mainNavLinks.show();
+        }
+        else {
+            $(this).removeClass("nav-open");
+            $(this).addClass("nav-closed");
+            $mainNavLinks.hide();
+        }
+        navState = !navState;
+    });
+
+    $(document).mouseup(e => {
+        if (!$mainNav.is(e.target) // if the target of the click isn't the container...
+            && $mainNav.has(e.target).length === 0 && navState)// ... nor a descendant of the container
+        {
+            $mainNav.removeClass("nav-open");
+            $mainNav.addClass("nav-closed");
+            $mainNavLinks.hide();
+            navState = !navState;
+        }
+    });
+
 });
