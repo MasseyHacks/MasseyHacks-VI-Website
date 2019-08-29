@@ -38,7 +38,7 @@ $(function () {
             countUp();
         },
         offset: '60%',
-        updateURL: true
+        updateURL: false
     });
 
     var $mainNav = $("#main-nav");
