@@ -49,13 +49,9 @@ $(function () {
             $(this).removeClass("nav-closed");
             $(this).addClass("nav-open");
             $mainNavLinks.fadeIn(150);
+            navState = !navState;
         }
-        else {
-            $(this).removeClass("nav-open");
-            $(this).addClass("nav-closed");
-            $mainNavLinks.fadeOut(50);
-        }
-        navState = !navState;
+
     });
 
     $(".project").each(function () {
