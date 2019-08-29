@@ -502,7 +502,7 @@ nav:hover {
         transform: rotate(-45deg);
         width: 60px;
         height: 60px;
-        background: linear-gradient(to right, #00c6ff, #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     }
 
     #shape3 {
@@ -516,12 +516,14 @@ nav:hover {
         top: 20vh;
         left: calc(92vw - 100px);
         transform: rotate(-45deg);
+        background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
     }
 
     #shape5 {
         top: 100vh;
         left: calc(92vw - 100px);
         transform: rotate(-45deg);
+        /*background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);*/
     }
 
     #shape6 {
@@ -530,7 +532,7 @@ nav:hover {
         transform: rotate(-45deg);
         height: 120px;
         width: 120px;
-        /*background: linear-gradient(to right, #f46b45, #eea849); !* Chrome 10-25, Safari 5.1-6 *!*/
+        /*background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);*/
     }
 
     #shape7 {
@@ -560,6 +562,7 @@ nav:hover {
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
+        background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
     #shape10 {
@@ -570,26 +573,33 @@ nav:hover {
     #shape11 {
         top: 320vh;
         left: 8vw;
+        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     }
 
     #shape12 {
         top: 250vh;
         left: 2vw;
+        /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
     }
 
     #shape13 {
         top: 300vh;
         left: calc(92vw - 100px);
+        background: linear-gradient(to right, #ff4b1f, #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
     #shape14 {
         top: 240vh;
-        left: calc(98vw - 100px);
+        left: calc(92vw - 100px);
+        /*background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);*/
         /*border-radius: 5000px;*/
-        width: auto;
-        height: auto;
-        background: transparent;
+        width: 80px;
+        height: 80px;
     }
+
+    /*#shape15 {*/
+    /*    top: 375vh;*/
+    /*}*/
 
     #shapes > div.square-rotated {
         transform: rotate(-45deg);
