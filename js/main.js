@@ -46,12 +46,12 @@ $(function () {
         if(!navState){
             $(this).removeClass("nav-closed");
             $(this).addClass("nav-open");
-            $mainNavLinks.show();
+            $mainNavLinks.fadeIn(150);
         }
         else {
             $(this).removeClass("nav-open");
             $(this).addClass("nav-closed");
-            $mainNavLinks.hide();
+            $mainNavLinks.fadeOut(50);
         }
         navState = !navState;
     });
@@ -62,7 +62,7 @@ $(function () {
         {
             $mainNav.removeClass("nav-open");
             $mainNav.addClass("nav-closed");
-            $mainNavLinks.hide();
+            $mainNavLinks.fadeOut(50);
             navState = !navState;
         }
     });
