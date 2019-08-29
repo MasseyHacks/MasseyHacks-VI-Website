@@ -23,6 +23,7 @@ function countUp() {
 
     });
 }
+var navState = false;
 
 $(function () {
     var rellax = new Rellax('.rellax');
@@ -38,7 +39,6 @@ $(function () {
         offset: '60%'
     });
 
-    var navState = false;
     var $mainNav = $("#main-nav");
     var $mainNavLinks = $("#main-nav-links");
 
