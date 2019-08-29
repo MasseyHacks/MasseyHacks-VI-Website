@@ -90,7 +90,6 @@ a:hover {
 
 .nav-open {
     border-radius: 10px;
-    height: 40vh;
     width: 50vw;
 }
 
@@ -99,7 +98,8 @@ a:hover {
     align-items: center;
     top: 0;
     right: 0;
-    height: 40vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
     transition: display 150ms ease;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -160,7 +160,6 @@ nav:hover {
     }
     .nav-open {
         border-radius: 20px;
-        height: 45vh;
         width: 25vw;
     }
     .nav-icon {
@@ -172,12 +171,6 @@ nav:hover {
     .nav-icon-container {
         height: 7vw;
         width: 7vw;
-    }
-    .nav-links-wrapper {
-        height: 45vh;
-    }
-    .nav-links-wrapper {
-        margin-left: 0.25em;
     }
     .nav-links {
         font-size: 0.8em;
@@ -191,7 +184,6 @@ nav:hover {
     }
     .nav-open {
         border-radius: 20px;
-        height: 35vh;
         width: 45vw;
     }
     .nav-icon {
@@ -203,12 +195,6 @@ nav:hover {
     .nav-icon-container {
         height: 13vw;
         width: 13vw;
-    }
-    .nav-links-wrapper {
-        height: 35vh;
-    }
-    .nav-links-wrapper {
-        margin-left: 0.25em;
     }
     .nav-links {
         font-size: 1.5em;
@@ -222,7 +208,6 @@ nav:hover {
     }
     .nav-open {
         border-radius: 20px;
-        height: 6em;
         width: 7em;
     }
     .nav-icon {
@@ -236,10 +221,9 @@ nav:hover {
         width: 1.8em;
     }
     .nav-links-wrapper {
-        height: 6em;
-    }
-    .nav-links-wrapper {
-        margin-left: 0.25em;
+        margin-left: 0.4em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
     .nav-links {
         font-size: 0.5em;

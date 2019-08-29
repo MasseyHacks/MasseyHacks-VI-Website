@@ -42,16 +42,21 @@ $(function () {
     });
 
     var $mainNav = $("#main-nav");
+    var $mainNavIcon = $("#main-nav-icon-container");
     var $mainNavLinks = $("#main-nav-links");
 
-    $mainNav.click(function () {
+    $mainNavIcon.click(function () {
         if(!navState){
-            $(this).removeClass("nav-closed");
-            $(this).addClass("nav-open");
+            $mainNav.removeClass("nav-closed");
+            $mainNav.addClass("nav-open");
             $mainNavLinks.fadeIn(150);
-            navState = !navState;
         }
-
+        else {
+            $mainNav.removeClass("nav-open");
+            $mainNav.addClass("nav-closed");
+            $mainNavLinks.fadeOut(50);
+        }
+        navState = !navState;
     });
 
     $(".project").each(function () {
