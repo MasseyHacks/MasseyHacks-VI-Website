@@ -202,13 +202,14 @@ nav:hover {
 
 .hero-background {
     min-height: 100vh;
-    background: rgb(247, 247, 247);
+    background-size: cover;
     z-index: 500;
+    /*background-image: url("../assets/images/_MG_1959.jpg");*/
 }
 
 .hero {
     position: absolute;
-    top: 55%;
+    top: 30%;
     left: 5vw;
     color: #212529;
 }
@@ -370,12 +371,12 @@ nav:hover {
     transition: all 0.2s;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
 
 }
 
 .project-image:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 /*.row:nth-of-type(1) > .project:nth-of-type(2):hover {*/
@@ -396,23 +397,23 @@ nav:hover {
 }
 
 #project1 div.project-image {
-    height: 10em;
+    height: 15em;
     background-image: url("../assets/images/hydrolife.jpg");
 }
 
 #project2 div.project-image {
     height: 15em;
-    background-image: url("../assets/images/hydrolife.jpg");
+    background-image: url("../assets/scalables/lag++.svg");
 }
 
 #project3 div.project-image {
-    height: 12em;
-    background-image: url("../assets/images/hydrolife.jpg");
+    height: 15em;
+    background-image: url("../assets/scalables/strest.svg");
 }
 
 
 #project4 div.project-image {
-    height: 11em;
+    height: 15em;
     background-image: url("../assets/images/hydrolife.jpg");
 }
 
@@ -532,33 +533,33 @@ nav:hover {
         left: calc(92vw - 100px);
     }
 
-    #shape11 {
-        top: 320vh;
-        left: 8vw;
-        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    }
+    /*#shape11 {*/
+    /*    top: 320vh;*/
+    /*    left: 8vw;*/
+    /*    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+    /*}*/
 
-    #shape12 {
-        top: 250vh;
-        left: 2vw;
-        /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
-    }
+    /*#shape12 {*/
+    /*    top: 250vh;*/
+    /*    left: 2vw;*/
+    /*    !*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*!*/
+    /*}*/
 
-    #shape13 {
-        top: 300vh;
-        left: calc(92vw - 100px);
-        background: linear-gradient(to right, #ff4b1f, #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+    /*#shape13 {*/
+    /*    top: 300vh;*/
+    /*    left: calc(92vw - 100px);*/
+    /*    background: linear-gradient(to right, #ff4b1f, #ff9068); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*}*/
 
-    #shape14 {
-        top: 240vh;
-        left: calc(92vw - 90px);
-        /*background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);*/
-        /*border-radius: 5000px;*/
-        width: 80px;
-        height: 80px;
-        background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
-    }
+    /*#shape14 {*/
+    /*    top: 240vh;*/
+    /*    left: calc(92vw - 90px);*/
+    /*    !*background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);*!*/
+    /*    !*border-radius: 5000px;*!*/
+    /*    width: 80px;*/
+    /*    height: 80px;*/
+    /*    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);*/
+    /*}*/
 
     /*#shape15 {*/
     /*    top: 375vh;*/

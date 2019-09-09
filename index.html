@@ -29,6 +29,79 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    body {
+        margin:0;
+    }
+    .logo {
+        width:50px;
+        fill:white;
+        padding-right:15px;
+        display:inline-block;
+        vertical-align: middle;
+    }
+    
+    .inner-header {
+        height:65vh;
+        width:100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .flex { /*Flexbox for containers*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .waves {
+        position:relative;
+        width: 100%;
+        height: 20vh;
+        margin-bottom:-7px; /*Fix for safari gap*/
+        min-height:100px;
+        max-height:150px;
+    }
+    
+    /* Animation */
+    
+    .parallax > use {
+        animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+    @keyframes move-forever {
+        0% {
+            transform: translate3d(-90px,0,0);
+        }
+        100% {
+            transform: translate3d(85px,0,0);
+        }
+    }
+    /*Shrinking for mobile*/
+    @media (max-width: 992px) {
+        .waves {
+            height:100px;
+            min-height:40px;
+        }
+    }
+</style>
+
 <body id="top">
     <nav id="main-nav" class="nav-closed">
         <div class="nav-icon-container">
@@ -54,10 +127,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             <h1>MasseyHacks <span>VI</span></h1>
             <h4>March 28th - 29th, 2020</h4>
         </div>
+        <!--Content before waves-->
+        <div class="inner-header flex">
+        </div>
+    
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(186,223,219,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(248,169,120,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(252,249,0,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#a7d7c5" />
+                </g>
+            </svg>
+        </div>
+        <div style="transform: rotate(180deg)">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="28" y="0" fill="rgba(248,169,120,0.5)" />
+                    <use xlink:href="#gentle-wave" x="28" y="3" fill="rgba(186,223,219,0.7)" />
+                    <use xlink:href="#gentle-wave" x="28" y="5" fill="rgba(252,249,0,0.3)" />
+                    <use xlink:href="#gentle-wave" x="28" y="7" fill="#a7d7c5" />
+                </g>
+            </svg>
+        </div>
     </div>
 
 <!-- About -->
-<div class="container" id="about" style="margin-top: 20vh;">
+<div class="container" id="about" style="@media(min-width: 968px) {margin-top: 20vh;}">
     <div class="row row-tb-margin align-items-center justify-content-center" data-aos="fade-in">
         <!-- Intro paragraph -->
         <div class="col-md-6">
@@ -192,56 +298,55 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </a>
 </div> <!-- END CAROUSEL -->
 
-<!-- Featured Projects -->
-<div class="container" id="past-projects">
-    <h2 style="text-align: center; padding: 1em 0;">Past Projects</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="row no-gutters justify-content-center">
-                <div class="col-md-6" style="">
-                    <div class="project" id="project1" data-dataset-index="0" data-aos="fade-in">
-                        <div class="project-image">
-                        </div>
-                        <div class="project-bg">
-                            <h4>HydroLife</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6"
-                     style="align-content: center; align-items: center; justify-content: center; justify-items: center; justify-self: center;">
-                    <div class="project" id="project2" data-dataset-index="1" data-aos="fade-in">
-                        <div class="project-image">
-                        </div>
-                        <div class="project-bg">
-                            <h4>Lag++</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row no-gutters justify-content-center" id="second-row-projects">
-                <div class="col-md-6" style="">
-                    <div class="project" id="project3" data-dataset-index="2" data-aos="fade-in">
-                        <div class="project-image">
-                        </div>
-                        <div class="project-bg">
-                            <h4>STREST</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" style="">
-                    <div class="project" id="project4" data-dataset-index="3" data-aos="fade-in">
-                        <div class="project-image">
-                        </div>
-                        <div class="project-bg">
-                            <h4>Wave</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
+<!--&lt;!&ndash; Featured Projects &ndash;&gt;-->
+<!--<div class="container" id="past-projects">-->
+<!--    <h2 style="text-align: center; padding: 1em 0;">Past Projects</h2>-->
+<!--    <div class="row justify-content-center">-->
+<!--        <div class="col-md-10">-->
+<!--            <div class="row no-gutters justify-content-center">-->
+<!--                <div class="col-md-6" style="">-->
+<!--                    <div class="project" id="project1" data-dataset-index="0" data-aos="fade-in">-->
+<!--                        <div class="project-image">-->
+<!--                        </div>-->
+<!--                        <div class="project-bg">-->
+<!--                            <h4>HydroLife</h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6"-->
+<!--                     style="align-content: center; align-items: center; justify-content: center; justify-items: center; justify-self: center;">-->
+<!--                    <div class="project" id="project2" data-dataset-index="1" data-aos="fade-in">-->
+<!--                        <div class="project-image">-->
+<!--                        </div>-->
+<!--                        <div class="project-bg">-->
+<!--                            <h4>Lag++</h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row no-gutters justify-content-center" id="second-row-projects">-->
+<!--                <div class="col-md-6" style="">-->
+<!--                    <div class="project" id="project3" data-dataset-index="2" data-aos="fade-in">-->
+<!--                        <div class="project-image">-->
+<!--                        </div>-->
+<!--                        <div class="project-bg">-->
+<!--                            <h4>STREST</h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6" style="">-->
+<!--                    <div class="project" id="project4" data-dataset-index="3" data-aos="fade-in">-->
+<!--                        <div class="project-image">-->
+<!--                        </div>-->
+<!--                        <div class="project-bg">-->
+<!--                            <h4>Wave</h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!-- Sponsors -->
 <div class="container-fluid sponsors" id="sponsors" data-aos="fade-in">
@@ -322,10 +427,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
          style="transform: rotate(-45deg);"></div>
     <div class="square-rotated rellax" id="shape9" style="transform: rotate(-45deg);"></div>
     <div class="square-rotated rellax" id="shape10" style="transform: rotate(-45deg);"></div>
-    <div class="square-rotated rellax" id="shape11" style="transform: rotate(-45deg);"></div>
-    <div class="square-rotated rellax" id="shape12" style="transform: rotate(-45deg);"></div>
-    <div class="square-rotated rellax" id="shape13" style="transform: rotate(-45deg);"></div>
-    <div class="square-rotated rellax" id="shape14" style="transform: rotate(-45deg);"></div>
+<!--    <div class="square-rotated rellax" id="shape11" style="transform: rotate(-45deg);"></div>-->
+<!--    <div class="square-rotated rellax" id="shape12" style="transform: rotate(-45deg);"></div>-->
+<!--    <div class="square-rotated rellax" id="shape13" style="transform: rotate(-45deg);"></div>-->
+<!--    <div class="square-rotated rellax" id="shape14" style="transform: rotate(-45deg);"></div>-->
 <!--    <div class="square-rotated rellax" id="shape15" style="transform: rotate(-45deg);"></div>-->
 
 </div>
