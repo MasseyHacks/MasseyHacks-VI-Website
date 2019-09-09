@@ -30,29 +30,30 @@ $(function () {
     var rellax = new Rellax('.rellax');
     AOS.init();
     var scroll = new SmoothScroll('a[href*="#"]',{
-        speed: 200
+        speed: 200,
+        updateURL: false
     });
     var waypoint = new Waypoint({
         element: document.getElementById('about'),
         handler: function() {
             countUp();
         },
-        offset: '60%',
-        updateURL: true
+        offset: '60%'
     });
 
     var $mainNav = $("#main-nav");
+    var $mainNavIcon = $("#main-nav-icon-container");
     var $mainNavLinks = $("#main-nav-links");
 
-    $mainNav.click(function () {
+    $mainNavIcon.click(function () {
         if(!navState){
-            $(this).removeClass("nav-closed");
-            $(this).addClass("nav-open");
+            $mainNav.removeClass("nav-closed");
+            $mainNav.addClass("nav-open");
             $mainNavLinks.fadeIn(150);
         }
         else {
-            $(this).removeClass("nav-open");
-            $(this).addClass("nav-closed");
+            $mainNav.removeClass("nav-open");
+            $mainNav.addClass("nav-closed");
             $mainNavLinks.fadeOut(50);
         }
         navState = !navState;
