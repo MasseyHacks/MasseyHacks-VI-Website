@@ -696,3 +696,73 @@ footer {
     padding-bottom: 3em;
     /*background-color: rgb(247, 247, 247);*/
 }
+
+/* Sponsorship */
+.sponsor-obj {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.co-host img {
+    max-height: 600px;
+    width: 1000px;
+    max-width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gold img {
+    max-height: 400px;
+    width: 600px;
+    max-width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.silver img {
+    max-height: 400px;
+    width: 400px;
+    max-width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partner img {
+    max-height: 300px;
+    width: 300px;
+    max-width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bronze img {
+    max-height: 125px;
+    max-width: 275px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Zoom */
+.zoom {
+    transition: transform .2s;
+    transform: scale(1);
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
