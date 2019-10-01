@@ -27,6 +27,21 @@ var navState = false;
 var modalDataset = ["https://devpost.com/software/hydrolife","https://devpost.com/software/lag-sq2cmo","https://devpost.com/software/strest","https://devpost.com/software/wave-t6zv4k"];
 
 $(function () {
+    console.log(`
+
+███╗   ███╗██╗  ██╗ ██████╗
+████╗ ████║██║  ██║██╔════╝
+██╔████╔██║███████║███████╗
+██║╚██╔╝██║██╔══██║██╔═══██╗
+██║ ╚═╝ ██║██║  ██║╚██████╔╝
+╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+                            
+Developed by: David Hui and James Xu.
+Made in Canada.
+
+Copyright (c) 2019 MasseyHacks.
+Website text and code licensed under MIT. Audiovisual assets are not to be used on other sites without written permission from MasseyHacks.`);
+    
     var rellax = new Rellax('.rellax');
     AOS.init();
     var scroll = new SmoothScroll('a[href*="#"]',{
