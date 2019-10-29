@@ -760,6 +760,14 @@ footer {
     .silver img {
         max-width: 80vw;
     }
+
+    .gold img {
+        max-width: 95vw;
+    }
+
+    .co-host img {
+        max-width: 95vw;
+    }
 }
 
 /* Zoom */
