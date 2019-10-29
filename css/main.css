@@ -756,6 +756,12 @@ footer {
     padding-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .silver img {
+        max-width: 80vw;
+    }
+}
+
 /* Zoom */
 .zoom {
     transition: transform .2s;
