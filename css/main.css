@@ -716,7 +716,7 @@ footer {
 
 .gold img {
     max-height: 400px;
-    width: 600px;
+    max-width: 600px;
     /*max-width: 95%;*/
     margin-left: 10px;
     margin-right: 10px;
