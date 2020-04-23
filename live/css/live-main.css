@@ -1,0 +1,35 @@
+body {
+    /* feel free to change height */
+    height: 5000px;
+    background: linear-gradient(
+            to bottom,
+            orange,
+            darkblue
+    );
+}
+
+h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 5px;
+    padding: 25px 15px;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.logo-svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+}
+
+#back {
+    /*display: none;*/
+    z-index: -2;
+}
