@@ -29,16 +29,16 @@ a:hover {
 
 /*  Wave  */
 .logo {
-    width:50px;
-    fill:white;
-    padding-right:15px;
-    display:inline-block;
+    width: 50px;
+    fill: white;
+    padding-right: 15px;
+    display: inline-block;
     vertical-align: middle;
 }
 
 .inner-header {
-    height:65vh;
-    width:100%;
+    height: 65vh;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -51,48 +51,54 @@ a:hover {
 }
 
 .waves {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 20vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    min-height:100px;
-    max-height:150px;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
 }
 
 /* Animation */
 
 .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
+
 .parallax > use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
 }
+
 .parallax > use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
 }
+
 .parallax > use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
 }
+
 .parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
 }
+
 @keyframes move-forever {
     0% {
-        transform: translate3d(-90px,0,0);
+        transform: translate3d(-90px, 0, 0);
     }
     100% {
-        transform: translate3d(85px,0,0);
+        transform: translate3d(85px, 0, 0);
     }
 }
+
 /*Shrinking for mobile*/
 @media (max-width: 992px) {
     .waves {
-        height:100px;
-        min-height:40px;
+        height: 100px;
+        min-height: 40px;
     }
 }
 
@@ -131,8 +137,9 @@ a:hover {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
 }
 
 .nav-icon-container {
@@ -184,20 +191,24 @@ nav:hover {
         height: 7vw;
         width: 7vw;
     }
+
     .nav-open {
         border-radius: 20px;
         width: 25vw;
     }
+
     .nav-icon {
         background-image: url("../assets/images/menu.svg");
         background-size: contain;
         height: 3vw;
         width: 3vw;
     }
+
     .nav-icon-container {
         height: 7vw;
         width: 7vw;
     }
+
     .nav-links {
         font-size: 0.8em;
     }
@@ -208,20 +219,24 @@ nav:hover {
         height: 13vw;
         width: 13vw;
     }
+
     .nav-open {
         border-radius: 20px;
         width: 45vw;
     }
+
     .nav-icon {
         background-image: url("../assets/images/menu.svg");
         background-size: contain;
         height: 6vw;
         width: 6vw;
     }
+
     .nav-icon-container {
         height: 13vw;
         width: 13vw;
     }
+
     .nav-links {
         font-size: 1.5em;
     }
@@ -232,25 +247,30 @@ nav:hover {
         height: 1.8em;
         width: 1.8em;
     }
+
     .nav-open {
         border-radius: 20px;
         width: 7em;
     }
+
     .nav-icon {
         background-image: url("../assets/images/menu.svg");
         background-size: contain;
         height: 0.8em;
         width: 0.8em;
     }
+
     .nav-icon-container {
         height: 1.8em;
         width: 1.8em;
     }
+
     .nav-links-wrapper {
         margin-left: 0.4em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
+
     .nav-links {
         font-size: 0.5em;
     }
@@ -412,7 +432,8 @@ nav:hover {
 .project h4 {
     font-size: 1.2em;
 }
-@media(min-width: 768px) {
+
+@media (min-width: 768px) {
     #second-row-projects {
         margin-top: 100px;
     }
@@ -594,19 +615,16 @@ nav:hover {
     /*    left: 8vw;*/
     /*    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
     /*}*/
-
     /*#shape12 {*/
     /*    top: 250vh;*/
     /*    left: 2vw;*/
     /*    !*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*!*/
     /*}*/
-
     /*#shape13 {*/
     /*    top: 300vh;*/
     /*    left: calc(92vw - 100px);*/
     /*    background: linear-gradient(to right, #ff4b1f, #ff9068); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
     /*}*/
-
     /*#shape14 {*/
     /*    top: 240vh;*/
     /*    left: calc(92vw - 90px);*/
@@ -616,11 +634,9 @@ nav:hover {
     /*    height: 80px;*/
     /*    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);*/
     /*}*/
-
     /*#shape15 {*/
     /*    top: 375vh;*/
     /*}*/
-
     #shapes > div.square-rotated {
         transform: rotate(-45deg);
     }
@@ -779,6 +795,7 @@ footer {
 .zoom:hover {
     transform: scale(1.05);
 }
+
 /* Standard Buttons */
 .button {
     min-width: 150px;
@@ -790,11 +807,13 @@ footer {
     border: 2px solid black;
     transition: background-color 0.3s;
 }
+
 .button:hover {
     background-color: black;
     color: white;
     border-color: black;
 }
+
 .button:active {
     background-color: black;
     color: white;
@@ -820,17 +839,70 @@ footer {
     border: 1px solid white;
     transition: background-color 0.3s;
 }
+
 .button-white:hover {
     background-color: white;
     color: black;
     border-color: white;
 }
+
 .button-white:active {
     background-color: white;
     color: black;
     border-color: white;
 }
+
 .button-white:disabled {
     background-color: rgba(200, 200, 200, 0.2);
     color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* STREAMS SECTION */
+/*.stream-title h1 {*/
+/*    text-align: center;*/
+/*}*/
+
+#stream-row > div {
+    border-right: 2px solid rgb(200, 200, 200);
+}
+
+#stream-row > div:last-child {
+    border-right: none;
+}
+
+.section-heading {
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 1px solid rgb(200,200,200);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-sub {
+    font-size: 0.8em;
+    /*padding: 0 5px 0 5px;*/
+}
+
+.profile:last-child {
+    /*padding-right: 0;*/
+}
+
+.profile-flex {
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
+    /*justify-content: space-between;*/
+}
+
+.profile-flex::after {
+    /*content: "";*/
+    /*flex: auto;*/
 }
