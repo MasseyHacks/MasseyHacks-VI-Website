@@ -152,6 +152,7 @@ a:hover {
     height: 15vw;
     width: 15vw;
     line-height: 1;
+    cursor: pointer;
 }
 
 .nav-icon {
