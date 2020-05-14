@@ -1,35 +1,127 @@
+/*body {*/
+/*    !* feel free to change height *!*/
+/*    height: 5000px;*/
+/*    background: linear-gradient(*/
+/*            to bottom,*/
+/*            orange,*/
+/*            darkblue*/
+/*    );*/
+/*}*/
+
+/*h1 {*/
+/*    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+/*    font-weight: 300;*/
+/*    color: white;*/
+/*    text-transform: uppercase;*/
+/*    text-align: center;*/
+/*    font-size: 22px;*/
+/*    letter-spacing: 5px;*/
+/*    padding: 25px 15px;*/
+/*    text-shadow: 1px 1px 1px #333;*/
+/*}*/
+
+/*.logo-svg {*/
+/*    position: fixed;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    margin: -75px 0 0 -75px;*/
+/*}*/
+
+/*#back {*/
+/*    !*display: none;*!*/
+/*    z-index: -2;*/
+/*}*/
+
 body {
-    /* feel free to change height */
-    height: 5000px;
-    background: linear-gradient(
-            to bottom,
-            orange,
-            darkblue
-    );
+    /*font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', sans-serif;*/
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
 }
 
-h1 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    color: white;
-    text-transform: uppercase;
+/* Schedule */
+
+.time {
+    transform: translate(50%, -45px);
+    width: 200px;
     text-align: center;
-    font-size: 22px;
-    letter-spacing: 5px;
-    padding: 25px 15px;
-    text-shadow: 1px 1px 1px #333;
+    font-size: 14px;
+}
+.time-heading {
+    transform: translate(50%, -65px);
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+}
+.schedule-label {
+    height: 2px;
+    position: absolute;
+    text-align: left;
+    color: black;
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+#label-container {
+    height: 0;
+}
+.inner-label {
+    position: relative;
+    transform: translateY(-75px);
+    padding-left: 1px;
+    margin: 0;
+    white-space: nowrap;
+}
+.label-caption {
+    padding: 0;
+    transform: translateY(12px);
+}
+.label-description {
+    font-size: 13px;
+}
+.schedule-outer {
+    padding-top: 20px;
+    width: 100%;
+    height: 600px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling:touch;
 }
 
-.logo-svg {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
+.schedule-outer::-webkit-scrollbar {
+    width: 1em;
 }
 
-#back {
-    /*display: none;*/
-    z-index: -2;
+.schedule-outer::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);*/
+    background-color: #ededed;
+}
+
+.schedule-outer::-webkit-scrollbar-thumb {
+    background-color: rgba(169,169,169,0.8);
+    outline: 1px solid slategrey;
+    border-radius: 0.5em;
+}
+
+.schedule-inner {
+    padding: 30px 0 0;
+    width: 100%;
+    min-height: 500px;
+    height: 90%;
+    white-space: nowrap;
+    -webkit-overflow-scrolling:touch;
+    font-size: 0;
+}
+.schedule-obj {
+    width: 200px;
+    min-height: 500px;
+    height: 100%;
+    border-right-color: #ededed;
+    border-right-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
 }
