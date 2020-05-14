@@ -196,7 +196,6 @@ $(function () {
     fetchSchedule();
     setInterval(fetchSchedule, 60000)
 
-    $('#schedule-outer').hScroll();
     // Update the count down every 1 second
     updateClock();
     let x = setInterval(function() {
