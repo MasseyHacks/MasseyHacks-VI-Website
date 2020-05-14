@@ -2,124 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MasseyHacks VI: LIVE</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/live-main.css">
 </head>
-<body>
-<h1>MasseyHacks VI: LIVE</h1>
-    <section id="schedule" class="slide slide-free container-fluid changeable" style="padding-left: 0; padding-bottom: 0;">
-        <h3>Schedule</h3>
+<body id="top">
 
-        <div id="schedule-frame" style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center;">
-            <div class="schedule-outer" id="schedule-outer">
+<nav class="live-nav mb-3">
+    <div class="brand align-items-center d-block d-md-flex">
+        <div class="mr-1 font-weight-bold d-none d-md-block">MasseyHacks VI: <strong style="color: #df2800">Live</strong> <span class="font-weight-normal">-</span></div>
+        <div class="d-block d-md-none"><h3 class="text-center">MasseyHacks VI: <span style="color: #df2800">Live</span></h3></div>
+        <div><p id="date-time"></p></div>
+    </div>
+</nav>
 
-                <div id="label-container" style="z-index: 8900; position: relative;"></div>
+<section id="activities" class="slide slide-free container-fluid changeable" style="padding-bottom: 0">
+    <div class="row">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h3>Activities</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h5 style="text-align: left">Now</h5>
+                    <p id="schedulenow"></p>
+                </div>
+                <div class="col-sm-4">
 
-                <div class="schedule-inner" style="transform: translateX(-100px)">
-                    <div class="schedule-obj">
-                        <div id="sat" class="time-heading"><b>Sat (May 30)</b></div>
-                        <div id="sat-anchor" class="time">12:00 PM</div>
-                    </div>
-                    <!--                <div class="schedule-obj">-->
-                    <!--                    <div class="time">12:00 PM</div>-->
-                    <!--                </div>-->
-                    <div class="schedule-obj">
-                        <div class="time">1:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">2:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">3:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">4:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">5:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">6:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">7:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">8:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">9:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">10:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">11:00 PM</div>
-                    </div>
-                    <div class="schedule-obj" style="border-color: #DDDDDD">
-                        <div id="sun" class="time-heading"><b style="padding: 10px">Sun (May 31)</b></div>
-                        <div id="sun-anchor" class="time">12:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">1:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">2:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">3:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">4:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">5:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">6:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">7:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">8:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">9:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">10:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">11:00 AM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">12:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">1:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">2:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">3:00 PM</div>
-                    </div>
-                    <div class="schedule-obj">
-                        <div class="time">4:00 PM</div>
-                    </div>
-                    <div class="schedule-obj" style="margin-right: 150px">
-                        <div class="time">5:00 PM</div>
-                    </div>
+                    <h5 style="text-align: left">Upcoming</h5>
+                    <p id="scheduleupcoming"></p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section id="schedule" class="slide slide-free container-fluid changeable" style="padding-left: 0; padding-bottom: 0; padding-right: 0;">
+    <div class="d-flex justify-content-center">
+        <h3>Schedule</h3>
+    </div>
+
+
+    <div id="schedule-frame" style="overflow-x: hidden; width: 100%; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center;">
+        <div class="schedule-outer" id="schedule-outer">
+
+            <div id="label-container" style="z-index: 8900; position: relative;"></div>
+
+            <div class="schedule-inner" style="transform: translateX(-100px)">
+                <div class="schedule-obj">
+                    <div id="sat" class="time-heading"><b>Sat (May 30)</b></div>
+                    <div id="sat-anchor" class="time">12:00 PM</div>
+                </div>
+                <!--                <div class="schedule-obj">-->
+                <!--                    <div class="time">12:00 PM</div>-->
+                <!--                </div>-->
+                <div class="schedule-obj">
+                    <div class="time">1:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">2:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">3:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">4:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">5:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">6:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">7:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">8:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">9:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">10:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">11:00 PM</div>
+                </div>
+                <div class="schedule-obj" style="border-color: #DDDDDD">
+                    <div id="sun" class="time-heading"><b style="padding: 10px">Sun (May 31)</b></div>
+                    <div id="sun-anchor" class="time">12:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">1:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">2:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">3:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">4:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">5:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">6:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">7:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">8:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">9:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">10:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">11:00 AM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">12:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">1:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">2:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">3:00 PM</div>
+                </div>
+                <div class="schedule-obj">
+                    <div class="time">4:00 PM</div>
+                </div>
+                <div class="schedule-obj" style="margin-right: 150px">
+                    <div class="time">5:00 PM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer>
+    <div class="container-fluid">
+        <!-- Desktop footer -->
+        <div class="row align-items-center justify-content-center footer-desktop" style="width: 100%">
+            <div class="col-md-5 footer-wrapper">
+                <h3 class="footer-title">MasseyHacks VI</h3>
+                <p class="footer-copyright"><a href="mailto:hello@masseyhacks.ca" class="expand-link">hello@masseyhacks.ca</a><br>Copyright
+                    &copy; 2020 MasseyHacks<br>&lt;/&gt; by the MasseyHacks Platform
+                    Team with <i class="fas fa-coffee"></i></p>
+            </div>
+            <div class="col-md-4">
+                <ul class="footer-links">
+                    <li><a class="expand-link" data-scroll href="#top">Home</a></li>
+                    <li><a class="expand-link" href="#activities">Activities</a></li>
+                    <li><a class="expand-link" href="#schedule">Schedule</a></li>
+                    <!--                    <li><a class="expand-link" href="#past-projects">Past Projects</a></li>-->
+                    <li><a class="expand-link" href="https://masseyhacks.ca">Main Site</a></li>
+                    <!--                    <li><a class="expand-link" href="blog">Blog</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile footer -->
+        <div class="row align-items-center justify-content-center footer-mobile">
+            <div class="col-sm-12">
+                <h3 class="footer-title">MasseyHacks VI</h3>
+                <p><a class="expand-link" data-scroll href="#top">Home</a><a class="expand-link" href="#activities">Activities</a><!--<a
+                        class="expand-link" href="">Past Projects</a>--><a class="expand-link" href="#schedule">Schedule</a><a
+                        class="expand-link" href="https://masseyhacks.ca">Main Site</a></p>
+                <p class="footer-copyright">Copyright &copy; 2020 MasseyHacks<br>&lt;/&gt; by the MasseyHacks Platform
+                    Team with <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
