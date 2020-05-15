@@ -5,7 +5,7 @@ function myFunction(imgs) {
     let expandImg = $("#expandedImage")
     let imgText = $("#imgtext")
     // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.attr('src', "https://www.youtube-nocookie.com/embed/" + imgs.dataset.youtubeid)
+    expandImg.attr('src', `https://www.youtube.com/embed/${imgs.dataset.youtubeid}?&autoplay=1`)
     // console.log(imgs.dataset.streamurl)
     // Use the value of the alt attribute of the clickable image as text inside the expanded image
     imgText.innerHTML = imgs.alt;

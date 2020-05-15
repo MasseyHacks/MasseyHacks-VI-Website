@@ -33,16 +33,31 @@
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
         
         <!-- Expanded image -->
-        <iframe id="expandedImage" width="100%" height="400" src="https://www.youtube-nocookie.com/embed/V7VWcJgRA0g"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <style>.embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        .embed-container iframe, .embed-container object, .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }</style>
+        <div class='embed-container'>
+            <iframe id="expandedImage" src='https://www.youtube.com/embed/V7VWcJgRA0g' frameborder='0' allowfullscreen></iframe>
+        </div>
         
         <!-- Image text -->
         <div id="imgtext"></div>
     </div>
     
     <!-- The grid: four columns -->
-    <div class="row">
+    <div class="row" style="margin-top: 100px;">
         <div class="col-md-3">
             <img src="" class="img-fluid stream-thumbnail" alt="Nature" onclick="myFunction(this);"
                  data-youtubeid="V7VWcJgRA0g">
