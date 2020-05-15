@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/live-main.css">
+    <link rel="stylesheet" href="css/stream-gallery.css">
 </head>
 <body id="top">
 
@@ -21,6 +22,36 @@
         <div><p id="date-time"></p></div>
     </div>
 </nav>
+
+<section id="streams" class="container">
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+        <!-- Expanded image -->
+        <img id="expandedImg" src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%">
+        
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+    
+    <!-- The grid: four columns -->
+    <div class="row">
+        <div class="col-md-3">
+            <img src="https://www.w3schools.com/howto/img_nature.jpg" class="img-fluid" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="col-md-3">
+            <img src="https://www.w3schools.com/howto/img_snow.jpg" class="img-fluid" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="col-md-3">
+            <img src="https://www.w3schools.com/howto/img_mountains.jpg" class="img-fluid" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="col-md-3">
+            <img src="https://www.w3schools.com/howto/img_lights.jpg" class="img-fluid" alt="Lights" onclick="myFunction(this);">
+        </div>
+    </div>
+</section>
 
 <section id="activities" class="slide slide-free container-fluid changeable" style="padding-bottom: 0">
     <div class="row">
@@ -201,5 +232,5 @@
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="js/live-main.js"></script>
-
+<script src="js/stream-gallery.js"></script>
 </html>
