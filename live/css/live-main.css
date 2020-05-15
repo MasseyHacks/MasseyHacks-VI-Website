@@ -249,6 +249,7 @@ footer {
     padding: 0;
     transform: translateY(12px);
     margin-bottom: 16px;
+    font-size: 1em;
 }
 .label-description {
     font-size: 13px;

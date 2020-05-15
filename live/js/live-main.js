@@ -95,8 +95,23 @@ function fetchSchedule(){
                 updateActivities(scheduleCache);
             },
             error: function (data) {
-                $('#schedulenow').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
-                $('#scheduleupcoming').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
+                $.ajax({
+                    type: 'GET',
+                    url: './live/schedule.json',
+                    dataType: 'json',
+                    success: function (ndata) {
+                        scheduleCache = ndata;
+                        //console.log(data);
+                        drawSchedule(scheduleCache);
+                        updateActivities(scheduleCache);
+                    },
+                    error: function (data) {
+                        $('#schedulenow').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
+                        $('#scheduleupcoming').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
+                    }
+                })
+                // $('#schedulenow').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
+                // $('#scheduleupcoming').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
             }
         })
     }
@@ -197,13 +212,18 @@ $(function () {
     setInterval(fetchSchedule, 60000)
 
     // Update the count down every 1 second
-    updateClock();
-    let x = setInterval(function() {
-        if(clockComplete){
-            clearInterval(x);
-        }
-        else{
-            updateClock();
-        }
-    }, 1000);
+    try {
+        updateClock();
+        let x = setInterval(function() {
+            if(clockComplete){
+                clearInterval(x);
+            }
+            else{
+                updateClock();
+            }
+        }, 1000);
+    } catch (e) {
+        console.log(e)
+    }
+
 })

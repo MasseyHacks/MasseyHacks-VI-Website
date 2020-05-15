@@ -614,7 +614,7 @@ nav:hover {
     }
 
     #shape9 {
-        top: 180vh;
+        top: 235vh;
         left: 8vw;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
@@ -625,7 +625,7 @@ nav:hover {
     }
 
     #shape10 {
-        top: 190vh;
+        top: 250vh;
         left: calc(92vw - 100px);
     }
 
