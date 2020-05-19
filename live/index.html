@@ -29,6 +29,9 @@
 <section id="streams" class="container">
     <!-- The expanding image container -->
     <div class="container">
+        <div class="d-flex justify-content-center">
+            <h3>Streams</h3>
+        </div>
         <!-- Close the image -->
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
         
@@ -54,26 +57,30 @@
         </div>
         
         <!-- Image text -->
-        <div id="imgtext"></div>
+        <div><p class="mb-1 mt-1 text-center">You're watching: <span id="imgtext">General</span> stream</p></div>
     </div>
     
     <!-- The grid: four columns -->
-    <div class="row" style="margin-top: 100px;">
+    <div class="row mt-2 mb-4">
         <div class="col-md-3">
-            <img src="" class="img-fluid stream-thumbnail" alt="Nature" onclick="myFunction(this);"
-                 data-youtubeid="V7VWcJgRA0g">
+            <img src="" class="img-fluid stream-thumbnail thumb-group-1" alt="General" onclick="myFunction(this);"
+                 data-youtubeid="V7VWcJgRA0g" style="border: 5px solid black">
+            <small>General</small>
         </div>
         <div class="col-md-3">
-            <img src="" class="img-fluid stream-thumbnail" alt="Snow" onclick="myFunction(this);"
+            <img src="" class="img-fluid stream-thumbnail thumb-group-1" alt="Yellow" onclick="myFunction(this);"
                  data-youtubeid="EmCzANPiCSc">
+            <small>Yellow</small>
         </div>
         <div class="col-md-3">
-            <img src="" class="img-fluid stream-thumbnail" alt="Snow" onclick="myFunction(this);"
+            <img src="" class="img-fluid stream-thumbnail thumb-group-1" alt="Green" onclick="myFunction(this);"
                  data-youtubeid="4TgyYCOcrig">
+            <small>Green</small>
         </div>
         <div class="col-md-3">
-            <img src="" class="img-fluid stream-thumbnail" alt="Snow" onclick="myFunction(this);"
+            <img src="" class="img-fluid stream-thumbnail thumb-group-1" alt="Magenta" onclick="myFunction(this);"
                  data-youtubeid="XBPjVzSoepo">
+            <small>Magenta</small>
         </div>
     </div>
 </section>

@@ -8,7 +8,13 @@ function myFunction(imgs) {
     expandImg.attr('src', `https://www.youtube.com/embed/${imgs.dataset.youtubeid}?&autoplay=1`)
     // console.log(imgs.dataset.streamurl)
     // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
+    imgText.html(imgs.alt);
+    //$(imgs).css('border','5px, solid, black')
+
+    for(let ele of document.getElementsByClassName('thumb-group-1')){
+        ele.style.border = '';
+    }
+    imgs.style.border = '5px solid black';
     // Show the container element (hidden with CSS)
     // expandImg.parentElement.style.display = "block";
 }
