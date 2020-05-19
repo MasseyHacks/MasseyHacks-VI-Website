@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{aos, font-awesome, jquery-3.4.1, noframework.waypoints, rellax, slim-10_7, smooth-scroll.polyfills, sweetalert2}" />
+    <file url="PROJECT" libraries="{aos, bootstrap, font-awesome, jquery-3.4.1, noframework.waypoints, popper.js, rellax, slim-10_7, smooth-scroll.polyfills, sweetalert2}" />
   </component>
 </project>

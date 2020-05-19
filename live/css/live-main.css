@@ -120,7 +120,7 @@ a:hover {
     text-align: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .live-nav .brand {
         margin-left: 1em;
         text-align: left;
