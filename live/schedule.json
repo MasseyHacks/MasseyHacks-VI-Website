@@ -122,25 +122,25 @@
     "y": 1
   },
   {
-    "caption": "Web Requests, APIs, and Application Security",
-    "date": "May 30 2020",
-    "start": "6:00PM",
-    "end": "7:30PM",
-    "location": "Zoom/Youtube",
-    "color": "#00b200",
-    "xs": 6,
-    "xe": 7.5,
-    "y": 3
-  },
-  {
-    "caption": "Firebase",
+    "caption": "Web Requests and APIs",
     "date": "May 30 2020",
     "start": "6:00PM",
     "end": "7:00PM",
     "location": "Zoom/Youtube",
-    "color": "#FF00FF",
+    "color": "#00b200",
     "xs": 6,
     "xe": 7,
+    "y": 3
+  },
+  {
+    "caption": "Firebase and Application Security",
+    "date": "May 30 2020",
+    "start": "6:00PM",
+    "end": "7:30PM",
+    "location": "Zoom/Youtube",
+    "color": "#FF00FF",
+    "xs": 6,
+    "xe": 7.5,
     "y": 2
   },
   {
@@ -166,7 +166,7 @@
     "y": 2
   },
   {
-    "caption": "Hackenger Hunt 2",
+    "caption": "Hackenger Hunt #2",
     "date": "May 30 2020",
     "dateEnd": "May 31 2020",
     "start": "11:00PM",
