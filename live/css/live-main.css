@@ -80,6 +80,13 @@ a:hover {
     border-radius: 0.5em;
 }
 
+hr.flex-break {
+    flex-basis: 100%;
+    height: 0;
+    margin: 0;
+    border: 0;
+}
+
 /* Cool looking links */
 
 .expand-link {
