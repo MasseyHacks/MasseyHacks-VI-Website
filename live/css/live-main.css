@@ -213,6 +213,10 @@ footer {
     line-height: initial;
 }
 
+.schedule-text-normal {
+	font-size: unset;
+}
+
 .time {
     transform: translate(50%, -45px);
     width: 200px;
