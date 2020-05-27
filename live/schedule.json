@@ -15,11 +15,11 @@
     "date": "May 30 2020",
     "dateEnd": "May 31 2020",
     "start": "1:00PM",
-    "end": "12:30PM",
+    "end": "2:00PM",
     "location": "Discord",
     "color": "#ff3333",
     "xs": 1,
-    "xe": 24.5,
+    "xe": 26,
     "y": 0
   },
   {
@@ -222,17 +222,6 @@
     "y": 3
   },
   {
-    "caption": "MLH Activity #2",
-    "date": "May 30 2020",
-    "start": "11:30PM",
-    "end": "12:30AM",
-    "location": "TBD",
-    "color": "#ff9900",
-    "xs": 11.5,
-    "xe": 12.5,
-    "y": 4
-  },
-  {
     "caption": "Minecraft PvP Bonanza",
     "date": "May 31 2020",
     "dateEnd": "May 31 2020",
@@ -247,13 +236,13 @@
   {
     "caption": "Submission Deadline",
     "date": "May 31 2020",
-    "start": "12:30PM",
-    "end": "1:30PM",
+    "start": "9:00AM",
+    "end": "10:00AM",
     "location": "DevPost",
     "color": "#4d94ff",
-    "xs": 24.5,
-    "xe": 25.5,
-    "y": 0
+    "xs": 21,
+    "xe": 22,
+    "y": 1
   },
   {
     "caption": "Judging",
