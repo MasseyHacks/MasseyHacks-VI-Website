@@ -22,6 +22,10 @@
     cursor: pointer;
 }
 
+.stream-difficulty {
+    font-size: 0.7em;
+}
+
 /*#expandedImage {*/
 /*    height: 60vh;*/
 /*    width: 100%;*/
