@@ -15,5 +15,6 @@
     <orderEntry type="library" name="sweetalert2" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="plotly-latest" level="application" />
   </component>
 </module>
