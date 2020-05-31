@@ -1,6 +1,6 @@
 // Set the date we're counting down to
 let countDownDate = new Date("May 30, 2020 13:00:00").getTime();
-let eventDoneDate = new Date("Mar 31, 2020 11:00:00").getTime();
+let eventDoneDate = new Date("May 31, 2020 11:00:00").getTime();
 
 let clockComplete = false;
 let scheduleCache;
