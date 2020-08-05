@@ -520,7 +520,7 @@ nav:hover {
     display: none;
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 1436px) {
     #shapes {
         position: absolute;
         top: 100vh;
